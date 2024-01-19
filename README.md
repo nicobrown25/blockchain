@@ -1,47 +1,56 @@
-# Blockchain Application
+# Basic Blockchain
 
-This application demonstrates a basic implementation of a blockchain. It includes functionalities to create a new block, mine blocks, display the entire chain, and verify the chain's integrity.
+This is a basic implementation of a blockchain in Python using Flask.
 
-## Setup Instructions
+## Endpoints
 
-Before running the application, ensure you have the following prerequisites:
+### `GET /mine_block`
 
-1. Download and install Python, Anaconda, Flask, and Postman.
-2. Open Anaconda Navigator.
-3. Launch Spyder (or your preferred Python IDE).
-4. Set up your project directory structure.
-5. Save your blockchain implementation in a file named `blockchain.py`.
+Mines a new block and adds it to the blockchain. Returns the new block as a JSON object.
 
-## Running the Application
+### `GET /get_chain`
 
-To start the blockchain application:
+Returns the entire blockchain as a list of blocks, along with the length of the chain.
 
-1. Navigate to your project directory in the terminal.
-2. Run the command `python blockchain.py` to start the Flask server.
-3. The server will start on `localhost` at port `5000`.
+### `GET /confirm_chain`
 
-## Using Postman to Interact with the Blockchain
+Validates the blockchain and returns a JSON object indicating whether the chain is valid.
 
-Postman can be used to interact with the blockchain via HTTP requests. Here are the available endpoints and how to use them:
+### `POST /add_transaction`
 
-### Mine a New Block
+Adds a new transaction to the transaction pool. The transaction should be provided as a JSON object in the request body with the following format:
 
-- **Endpoint:** `GET /mine_block`
-- **Purpose:** This endpoint mines a new block.
-- **Usage:** Send a GET request to `http://localhost:5000/mine_block`. The response includes details of the mined block.
+```json
+{
+    "sender": "sender username",
+    "receiver": "receiver username",
+    "amount": amount
+}
+```
+Returns a JSON object indicating whether the transaction was successfully added to the pool.
 
-### Get the Full Blockchain
+### GET /get_transactions
+Returns a JSON object containing the current transaction pool and the list of completed transactions.
 
-- **Endpoint:** `GET /get_chain`
-- **Purpose:** Retrieves the entire blockchain.
-- **Usage:** Send a GET request to `http://localhost:5000/get_chain`. This will return the current blockchain and its length.
+### GET /get_users
+Returns a JSON object containing all users.
 
-### Confirm Blockchain Validity
+### GET /get_user_balances
+Returns a JSON object containing the balance of each user.
 
-- **Endpoint:** `GET /confirm_chain`
-- **Purpose:** Checks if the blockchain is valid.
-- **Usage:** Send a GET request to `http://localhost:5000/confirm_chain`. The response will indicate whether the blockchain is valid.
+### POST /create_user
+Creates a new user. The username should be provided as a JSON object in the request body with the following format:
 
-## Interacting with the Blockchain
+```json
+{
+    "name": "username"
+}
+```
+Returns a JSON object indicating the status of the new user.
 
-After sending requests via Postman, you will receive JSON responses that include blockchain data and confirmation messages. This allows you to visually verify the operations performed on the blockchain.
+### Running the Application
+To run the application, use the following command:
+```bash
+python basic_blockchain_expanded.py
+```
+The application will start a Flask server on http://0.0.0.0:5000.
