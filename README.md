@@ -53,4 +53,4 @@ To run the application, use the following command:
 ```bash
 python basic_blockchain_expanded.py
 ```
-The application will start a Flask server on http://0.0.0.0:5000.
+The application will start a Flask server on http://127.0.0.1:5000.
