@@ -6,9 +6,7 @@
   - [Basic Blockchain Expanded](https://nobles-blockchain.postman.co/workspace/New-Team-Workspace~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/24854847-852421c2-4abb-4502-a0cf-e8117949fb49?action=share&creator=24854847)
 
 ### Running the Project
-To run the application, use the following command: ```python basic_blockchain_expanded.py```
-
-The application will start a Flask server on http://127.0.0.1:5000.
+1. To run the application, use the following command: ```python basic_blockchain_expanded.py```. The application will start a Flask server on http://127.0.0.1:5000.
 ## Cryptocurrency
 
 MontyCoin is a simple implementation of a blockchain and cryptocurrency.
