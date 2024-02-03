@@ -1,28 +1,26 @@
-# Blockchain Class
+# Blockchain Spring 2024
 
 ## Blockchain 
-### Postman Collections 
+### Endpoint Collections 
   - [Basic Blockchain](https://nobles-blockchain.postman.co/workspace/New-Team-Workspace~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/24854847-a4059b9c-1111-4056-82e7-6c845caf1603?action=share&creator=24854847)
   - [Basic Blockchain Expanded](https://nobles-blockchain.postman.co/workspace/New-Team-Workspace~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/24854847-852421c2-4abb-4502-a0cf-e8117949fb49?action=share&creator=24854847)
 
 ### Running the Project
-To run the application, use the following command:
-```bash
-python basic_blockchain_expanded.py
-```
+To run the application, use the following command: ```python basic_blockchain_expanded.py```
+
 The application will start a Flask server on http://127.0.0.1:5000.
 ## Cryptocurrency
 
 MontyCoin is a simple implementation of a blockchain and cryptocurrency.
 
-### Postman Collections
+### Endpoint Collections
   - [Cryptocurrency](https://nobles-blockchain.postman.co/workspace/New-Team-Workspace~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/24854847-5aaeccc5-c743-4bf6-a1a2-5f3ec30ad654?action=share&creator=24854847)
   - [Transaction Picker](https://nobles-blockchain.postman.co/workspace/Blockchain~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/31591599-4b3fe1aa-9f86-41a1-9705-ac6bd2beabe5?action=share&creator=24854847)
 
 ### Running the Project
 1. Navigate to scripts directory
 2. Run ```chmod +x run.sh``` and ```chmod +x stop.sh``` to make scripts executable
-3. Run the servers (nodes) with ```./run.sh```
+3. Run the servers (nodes) with ```./run.sh```. This will start 4 nodes on http://127.0.0.1:5000 - http://127.0.0.1:5003
 4. Stop the nodes with  ```./stop.sh```
 
 ### Project Improvements
