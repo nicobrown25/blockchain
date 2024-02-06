@@ -31,6 +31,6 @@ MontyCoin is a simple implementation of a blockchain and cryptocurrency.
 7. **GUI**: Create a graphical user interface (GUI) for easier interaction with the blockchain.
 8. **Error Handling**: Improve error handling and return appropriate HTTP status codes and messages when errors occur.
 9. **Data Persistence**: Implement a system to store the blockchain data persistently.
-10.** Reward System**: Implement a reward system for miners.
+10. **Reward System**: Implement a reward system for miners.
 
 ### Smart Contracts
