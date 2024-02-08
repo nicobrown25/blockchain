@@ -12,8 +12,8 @@
 MontyCoin is a simple implementation of a blockchain and cryptocurrency.
 
 ### Endpoint Collections
-  - [Cryptocurrency](https://nobles-blockchain.postman.co/workspace/New-Team-Workspace~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/24854847-5aaeccc5-c743-4bf6-a1a2-5f3ec30ad654?action=share&creator=24854847)
-  - [Transaction Picker](https://nobles-blockchain.postman.co/workspace/Blockchain~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/31591599-4b3fe1aa-9f86-41a1-9705-ac6bd2beabe5?action=share&creator=24854847)
+  - [Cryptocurrency](https://nobles-blockchain.postman.co/workspace/New-Team-Workspace~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/24854847-5aaeccc5-c743-4bf6-a1a2-5f3ec30ad654?action=share&creator=24854847) ([export](./endpoint_collections/basic_crypto.json))
+  - [Transaction Picker](https://nobles-blockchain.postman.co/workspace/Blockchain~6ee04c91-09b2-4066-a420-2d5e83667e0d/collection/31591599-4b3fe1aa-9f86-41a1-9705-ac6bd2beabe5?action=share&creator=24854847) ([export](endpoint_collections/transaction_picker.json))
 
 ### Running the Project
 1. Navigate to scripts directory
@@ -33,4 +33,4 @@ MontyCoin is a simple implementation of a blockchain and cryptocurrency.
 9. **Data Persistence**: Implement a system to store the blockchain data persistently.
 10. **Reward System**: Implement a reward system for miners.
 
-### Smart Contracts
+### Smart Contracts 
