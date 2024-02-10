@@ -20,6 +20,7 @@ MontyCoin is a simple implementation of a blockchain and cryptocurrency.
 2. Run ```chmod +x run.sh``` and ```chmod +x stop.sh``` to make scripts executable
 3. Run the servers (nodes) with ```./run.sh```. This will start 4 nodes on http://127.0.0.1:5000 - http://127.0.0.1:5003
 4. Stop the nodes with  ```./stop.sh```
+5. Install rust ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
 ### Project Improvements
 1. **Transaction Validation**:  Implement a system to validate transactions before they are added to the blockchain. This could include checking if the sender has enough balance to perform the transaction.

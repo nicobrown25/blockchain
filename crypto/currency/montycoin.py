@@ -8,6 +8,7 @@ from urllib.parse import urlparse
 import argparse
 
 
+
 class Blockchain:
     def __init__(self):
         self.chain = []
