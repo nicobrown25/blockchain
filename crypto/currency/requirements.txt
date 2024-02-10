@@ -1,7 +1,0 @@
-flask
-pycryptodome
-datetime
-requests
-uuid
-argparse
-cryptography

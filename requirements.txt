@@ -5,3 +5,4 @@ requests
 uuid
 argparse
 cryptography
+python-dotenv
