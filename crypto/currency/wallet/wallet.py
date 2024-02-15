@@ -8,7 +8,7 @@ import hashlib
 
 load_dotenv()
 
-# todo rm env from git
+# TODO: connect wallet to random node
 
 
 class Wallet:
