@@ -8,6 +8,8 @@ import hashlib
 
 load_dotenv()
 
+# todo rm env from git
+
 
 class Wallet:
     def __init__(self):
