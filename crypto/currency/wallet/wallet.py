@@ -5,10 +5,19 @@ from dotenv import load_dotenv
 import os
 import requests
 import hashlib
+from dotenv import load_dotenv
+import random
 
 load_dotenv()
 
-# TODO: connect wallet to random node
+nodes = os.getenv('NODES').split(',')
+node_base_url = os.getenv('NODE_BASE_URL')
+
+load_dotenv()
+
+
+def get_node():
+    return node_base_url + ':' + random.choice(nodes)
 
 
 class Wallet:
@@ -16,6 +25,7 @@ class Wallet:
         self.private_key = RSA.generate(2048)
         self.public_key = self.private_key.publickey()
         self.node = os.getenv('NODE_SERVER_URL')
+        self.node = get_node()
 
     def sign_message(self, message):
         message = message.encode('utf-8')
@@ -53,4 +63,5 @@ class Wallet:
         return response.json()
 
     def connect_node(self):
+        self.node = get_node()
         return self.node
