@@ -11,7 +11,8 @@ import argparse
 class Blockchain:
     def __init__(self):
         self.chain = []
-        self.transactions = []
+        self.transactions = [
+            {'sender': '', 'receiver': 'monty', 'amount': 100}]
         self.create_block(proof=1, previous_hash='0')
         self.nodes = set()
 
