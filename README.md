@@ -28,22 +28,19 @@ MontyCoin is a simple implementation of a blockchain and cryptocurrency.
 
 ### Running the Project
 
-1. Navigate to scripts directory
-2. Run `chmod +x run.sh` and `chmod +x stop.sh` to make scripts executable
-3. Run the servers (nodes) with `./run.sh`. This will start 4 nodes on http://127.0.0.1:5000 - http://127.0.0.1:5003
-4. Stop the nodes with `./stop.sh`
+1. Run `chmod +x run.sh` and `chmod +x stop.sh` from scripts directory to make scripts executable
+2. Run `start.py` from currency directory to start node controller and wallet GUIs. The servers (nodes) with `./run.sh`. This will start 4 nodes on http://127.0.0.1:5000 - http://127.0.0.1:5003
 
-### Project Improvements
+## Smart Contracts
 
-1. **Transaction Validation**: Implement a system to validate transactions before they are added to the blockchain. This could include checking if the sender has enough balance to perform the transaction.
-2. **Wallets**: Create a Wallet class that generates private and public keys for users. The private key can be used to sign transactions and the public key can be used as the user's address.
-3. **Transaction Signing and Verification**: Implement a system where transactions are signed using the sender's private key and can be verified by others using the sender's public key. This ensures that only the owner of a wallet can make transactions from it.
-4. **Improved Mining Process**: Modify the mining process. For example, you could implement a difficulty adjustment algorithm that adjusts the difficulty of the mining process based on the total computational power of the network.
-5. **Custom Hashing Algorithm**: Implement a custom hashing algorithm for the blockchain. This could be a great way to learn about cryptographic hash functions.
-6. **Peer-to-Peer Network**: Instead of manually adding nodes, implement a peer-to-peer network where nodes can discover each other.
-7. **GUI**: Create a graphical user interface (GUI) for easier interaction with the blockchain.
-8. **Error Handling**: Improve error handling and return appropriate HTTP status codes and messages when errors occur.
-9. **Data Persistence**: Implement a system to store the blockchain data persistently.
-10. **Reward System**: Implement a reward system for miners.
+### Setup
+1. Install [MetaMask](https://metamask.io/) browser extension
+2. Get Sepolia testnet ETH from a [faucet](https://faucet.quicknode.com/ethereum/sepolia/).
 
-### Smart Contracts
+### Deploy Contract
+1. Copy HelloWorld.sol into [Remix](https://remix.ethereum.org/). Compile. Deploy to MetaMask.
+2. Copy ABI and deployed contract address into config.js
+
+### Run Client
+1. Use http-server to run index.html/app.js frontend client
+2. Use [Sepolia etherscan](https://sepolia.etherscan.io/) to view contract transactions
