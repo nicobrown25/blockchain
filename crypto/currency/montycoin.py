@@ -6,6 +6,7 @@ import requests
 from uuid import uuid4
 from urllib.parse import urlparse
 import argparse
+from cryptography.fernet import Fernet
 
 
 class Blockchain:
