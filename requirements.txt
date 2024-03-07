@@ -1,0 +1,8 @@
+flask
+pycryptodome
+datetime
+requests
+uuid
+argparse
+cryptography
+python-dotenv
